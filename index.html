@@ -263,13 +263,21 @@
             <h2 class="section-title">Contact</h2>
 
             <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
-                    <input type="text" placeholder="Name" required class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="button" value="Send" class="contact__button button">
+                <form action="https://formsubmit.co/sbnsim81@email.com"
+                method="POST" class="contact__form">
+                    <input type="text" name="name"  placeholder="Full Name" class="contact__input"
+                        required>
+                    <input type="email" name="email" placeholder="Email Address"
+                        class="contact__input" required>
+                    <input type="hidden" name="_next"
+                        value="https://sabin-stw.github.io/portfolio.github.io/thankyou.html">
+                    <textarea placeholder="Your Message"  name="message" rows="10"
+                        class="contact__input" required></textarea>
+                    <button type="submit" class="contact__button button">Submit Form</button>
+
                 </form>
             </div>
+
         </section>
     </main>
 
