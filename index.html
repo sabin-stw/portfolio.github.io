@@ -9,7 +9,8 @@
 
     <!-- =====BOX ICONS===== -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
+    <link rel="stylesheet" href="assets/css/internet.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
     <title>Sabin Simkhada Portfolio </title>
 </head>
 
@@ -84,7 +85,7 @@
                         challenge. Reliable and friendly professional able to work with little oversight and collaborate
                         in team environments.</p>
                     <p><a href="https://drive.google.com/file/d/1FSVWJgKDwKGGv4pJsS5sS92mmRAiEuFR/view?usp=sharing"
-                        class="button">Download CV</a></p>
+                            class="button">Download CV</a></p>
                 </div>
             </div>
         </section>
@@ -263,16 +264,13 @@
             <h2 class="section-title">Contact</h2>
 
             <div class="contact__container bd-grid">
-                <form action="https://formsubmit.co/sbnsim81@email.com"
-                method="POST" class="contact__form">
-                    <input type="text" name="name"  placeholder="Full Name" class="contact__input"
-                        required>
-                    <input type="email" name="email" placeholder="Email Address"
-                        class="contact__input" required>
+                <form class="contact__form" action="https://formspree.io/f/mpzkozzj" method="POST">
+                    <input type="text" name="name" placeholder="Full Name" class="contact__input" required>
+                    <input type="email" name="email" placeholder="Email Address" class="contact__input" required>
                     <input type="hidden" name="_next"
                         value="https://sabin-stw.github.io/portfolio.github.io/thankyou.html">
-                    <textarea placeholder="Your Message"  name="message" rows="10"
-                        class="contact__input" required></textarea>
+                    <textarea placeholder="Your Message" name="message" rows="10" class="contact__input"
+                        required></textarea>
                     <button type="submit" class="contact__button button">Submit Form</button>
 
                 </form>
@@ -280,6 +278,31 @@
 
         </section>
     </main>
+
+    <!--===== NEXT WEBSITE LINKED =====-->
+    <div class="boxbtn">
+        <div class="contentbtn">
+            <div class="btnnext">
+                <a href="https://sabin-stw.github.io/portfolio.github.io/"><span><i class='bx bxs-download'></i> Source
+                        Code </span></a>
+            </div>
+        </div>
+    </div>
+
+    <!--===== TOAST NOTIFICATION =====-->
+
+    <div class="wrapper1">
+        <div class="toast">
+            <div class="content1">
+                <div class="icon1"><i class="uil uil-wifi"></i></div>
+                <div class="details1">
+                    <span>You're online now</span>
+                    <p>Hurray! Internet is connected.</p>
+                </div>
+            </div>
+            <div class="close-icon1"><i class="uil uil-times"></i></div>
+        </div>
+    </div>
 
     <!--===== FOOTER =====-->
     <footer class="footer">
@@ -303,6 +326,7 @@
 
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/internet.js"></script>
 </body>
 
 </html>
